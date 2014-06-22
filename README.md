@@ -17,10 +17,8 @@ Updates or installs the latest Sourcemod stable release or snapshots.
 
 ```shell
 # Change to any directory where you want to install it first
-aptitude install lynx wget findutils rsync
-wget https://github.com/bcserv/sourcemod-updater/archive/master.zip -O sourcemod-updater.zip
-unzip sourcemod-updater.zip
-mv sourcemod-updater-master sourcemod-updater
+aptitude install lynx wget findutils rsync git
+git clone https://github.com/chauffer/sourcemod-updater
 cd sourcemod-updater
 chmod u+x update.sh
 chmod u+w packagecache
