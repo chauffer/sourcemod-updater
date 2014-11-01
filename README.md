@@ -29,7 +29,7 @@ chmod u+w packagecache
 
 ### Syntax
 ```shell
-./update.sh <game_dir> [<optional Package URL>] --snapshot-stable --snapshot-dev --install --dontask --fixpermissions
+./update.sh <game_dir> [<optional Package URL>] --snapshot-stable --snapshot-dev --install --fixpermissions
 ```
 
 ### Options
@@ -46,12 +46,6 @@ Updates or installs the latest Sourcemod DEV snapshot.
 
 Installs sourcemod instead of updating.
 CAUTION: this will overwrite any existing sourcemod files.
-
-#### --dontask
-
-Never ask for anything during execution.
-This affects the situation when no package URL was found or
-the security check before continuing the update
 
 #### --fixpermissions
 
@@ -72,7 +66,6 @@ you have to set this.
 ./update.sh /srcds/css/cstrike --install --fixpermissions # Install sourcemod and fix the file permissions afterwards
 ./update.sh /srcds/css/cstrike --snapshot-stable          # Update sourcemod to the latest STABLE snapshot
 ./update.sh /srcds/css/cstrike --snapshot-dev             # Update sourcemod to the latest DEV snapshot
-./update.sh /srcds/css/cstrike --dontask                  # Never ask for anything
 ```
 
 # Behavior on updating

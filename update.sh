@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Usage: ./update /path/cstrike/ <URL> --snapshot-dev --snapshot-stable --install --dontask --fixpermissions
+# Usage: ./update /path/cstrike/ <URL> --snapshot-dev --snapshot-stable --install --fixpermissions
 
 # change to the script's directory
 cd $(dirname "$(readlink -f "$0")")
@@ -38,14 +38,6 @@ fi
 download
 
 if [[ $? == 1 ]]; then
-
-	if [[ ${options[dontask]} != "1" ]]; then
-		echo -e "${cyan}I will do the update now, press any key to continue${reset}, $red'CTRL + C' to exit$reset"
-		echo ""
-		stty -echo
-		read -n 1
-		stty echo
-	fi
 
 	update
 

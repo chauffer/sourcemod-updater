@@ -23,10 +23,6 @@ function download
 		if [[ $url_sourcemod_package == "" ]]; then
 			echo -e "${red}Error: Scanning for the latest sourcemod package failed.$reset"
 
-			if [[ ${options[dontask]} != "1" ]]; then
-				echo -e "${cyan}Please enter a direct URL for downloading Sourcemod:$reset"
-				read url_sourcemod_package
-			fi
 
 			if [[ $url_sourcemod_package == "" ]]; then
 				echo -e "${red}URL empty, aborting.$reset"
