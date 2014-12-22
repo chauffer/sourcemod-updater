@@ -3,7 +3,7 @@
 STABLE_MIRROR="http://mirror.pointysoftware.net/alliedmodders/"
 STABLE_SEARCHPATTER="http:.*sourcemod.*linux.*"
 
-SNAPSHOT_STABLE_MIRROR="http://www.sourcemod.net/smdrop/1.7/"
+SNAPSHOT_STABLE_MIRROR="http://www.sourcemod.net/smdrop/1.8/"
 SNAPSHOT_STABLE_SEARCHPATTER="http:.*sourcemod-.*git.*-linux.*"
 
 SNAPSHOT_DEV_MIRROR="http://cdn.hop.tf/git/"
