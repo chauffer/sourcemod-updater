@@ -1,7 +1,10 @@
 # The source code of this page will be searched for the latest sourcemod package
 # We assume that the last one is the latest
-STABLE_MIRROR="http://mirror.pointysoftware.net/alliedmodders/"
-STABLE_SEARCHPATTER="http:.*sourcemod.*linux.*"
+
+# The mirrors are actually all snapshots // todo: rename vars
+
+STABLE_MIRROR="http://www.sourcemod.net/smdrop/1.7/"
+STABLE_SEARCHPATTER="http:.*sourcemod-.*git.*-linux.*"
 
 SNAPSHOT_STABLE_MIRROR="http://www.sourcemod.net/smdrop/1.8/"
 SNAPSHOT_STABLE_SEARCHPATTER="http:.*sourcemod-.*git.*-linux.*"
